@@ -1,0 +1,203 @@
+$tabbar-height:46px !default; //下菜单的高度
+$buy-area-height:28px !default;
+$total_pay-height:42px;
+$main-color:#f60;
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    // max-width: 640px;
+    height: 100%;
+    margin: 0 auto;
+}
+.all-wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: #f1f1f1;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+p {
+    margin: 0
+}
+
+.overflow-el {
+    display: block;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.gray-font-10 {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 10px;
+}
+
+.gray-font-12 {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.gray-font-14 {
+    margin: 4px 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.orange-font-10 {
+    margin: 4px 0;
+    color: #f60;
+    font-size: 10px;
+}
+
+.orange-font-12 {
+    margin: 4px 0;
+    color: #f60;
+    font-size: 12px;
+}
+
+.orange-font-14 {
+    margin: 4px 0;
+    color: #f60;
+    font-size: 14px;
+}
+.back-font-12{
+    margin: 4px 0;
+    color: #444;
+    font-size: 12px;
+}
+.orange-btn-large {
+    width: 85%;
+    height: 40px;
+    border: 0;
+    border-radius: 46px;
+    background: #f60;
+    color: #fff;
+    &:active {
+        background: #f64;
+        box-shadow: 0 0 1px 1px #ccc;
+    }
+}
+.add{
+    color:#f60;
+}
+.decrease{
+    color: #468920;
+}
+button {
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    border: 1px solid #c1c1c1;
+    border-radius: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    color : #999;
+    &:active {
+        background: #f9f9f9;
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5) {
+    .border-1px {
+        position: relative;
+    }
+    .border-1px::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(7, 17, 27, .1);
+        transform: scaleY(0.7);
+        box-sizing: border-box;
+    }
+    .border-1px::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-left: 1px solid rgba(7, 17, 27, .1);
+        transform: scaleX(0.7);
+        box-sizing: border-box;
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:2),
+(min-device-pixel-ratio:2) {
+    .border-1px {
+        position: relative;
+    }
+    .border-1px::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(7, 17, 27, .1);
+        transform: scaleY(0.5);
+        box-sizing: border-box;
+    }
+    .border-1px::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        border-left: 1px solid rgba(7, 17, 27, .1);
+        transform: scaleX(0.5);
+        box-sizing: border-box;
+    }
+}
+
+//改vue-awesome-swiper点active的颜色
+.swiper-pagination-bullet-active {
+    background: #f60 !important;
+}
+
+input,
+button {
+    outline: none;
+}
+
+//vue动画
+.up-enter-active,
+.up-leave-active {
+    transition: all .3s;
+}
+
+.up-enter,
+.up-leave-active {
+    opacity: 0;
+    transform: translateY(100%);
+}
+select{
+    margin: 3px !important;
+}
